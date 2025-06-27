@@ -20,3 +20,30 @@
    ```bash
    git clone https://github.com/你的用户名/my-vue-app.git
    cd my-vue-app
+   npm install
+安装依赖
+
+bash
+复制
+编辑
+npm install
+运行项目
+
+bash
+复制
+编辑
+npm run dev
+目录结构
+bash
+复制
+编辑
+src/
+ ├─ components/       # 公共组件
+ ├─ views/            # 页面视图
+ ├─ router/           # 路由配置
+ ├─ assets/           # 资源文件
+ └─ main.js           # 入口文件
+贡献
+欢迎提出问题或提交 PR！
+
+许可证
