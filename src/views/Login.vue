@@ -3,8 +3,7 @@
     <div class="login-bg-blur"></div>
     <div class="login-card">
       <div class="login-logo-area">
-        <img class="login-logo" src="https://cdn.jsdelivr.net/gh/znimg/oss/logo-lowcode.svg" alt="logo" />
-        <div class="login-title">企业低代码平台</div>
+        <div class="login-title">登录</div>
       </div>
       <form class="login-form" @submit.prevent="onLogin">
         <div class="form-group">
@@ -18,7 +17,7 @@
         <button class="login-btn" :disabled="loading">{{ loading ? '登录中...' : '登录' }}</button>
         <div v-if="error" class="login-error">{{ error }}</div>
       </form>
-      <div class="login-footer">© 2024 企业低代码平台</div>
+      <div class="login-footer">© 2024 登录</div>
     </div>
   </div>
 </template>
@@ -37,7 +36,7 @@ function onLogin() {
   loading.value = true
   setTimeout(() => {
     if (username.value === 'admin' && password.value === '123456') {
-      router.push('/')
+      router.push('/main/menu')
     } else {
       error.value = '用户名或密码错误（admin/123456）'
     }
